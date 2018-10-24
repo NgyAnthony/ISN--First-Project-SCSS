@@ -46,6 +46,55 @@
   color: #f6c343;
 }
 
+#horizontal-google {
+  color: #f6c343;
+}
+
+#title {
+  color: #000;
+}
+
+/* Effets des boutons */
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-9 {
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
 .container-1 {
   display: flex;
 }
@@ -96,10 +145,10 @@
     max-height: 70%;
   }
   .container-1 .box_contents > h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .container-1 .box_contents {
-    padding-bottom: 50%;
+    padding-bottom: 70%;
   }
 
   .container-2 {
@@ -111,10 +160,10 @@
     max-height: 70%;
   }
   .container-2 .box_contents > h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .container-2 .box_contents {
-    padding-bottom: 50%;
+    padding-bottom: 70%;
   }
 
   .container-3 {
@@ -126,10 +175,10 @@
     max-height: 70%;
   }
   .container-3 .box_contents > h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .container-3 .box_contents {
-    padding-bottom: 50%;
+    padding-bottom: 70%;
   }
 }
 .box-1 {
@@ -198,8 +247,14 @@ body {
 
 #navigation li a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #160F66;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.hyperlink_removed {
+  text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 30px;
