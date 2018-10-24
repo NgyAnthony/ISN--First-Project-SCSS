@@ -12,7 +12,9 @@
 
 @mixin hyperlink{
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+@mixin nav{
   color: #160F66;
 }
 
@@ -68,4 +70,12 @@
 
 #horizontal-siri{
   color: #f6c343;
+}
+
+#horizontal-google{
+  color: #f6c343;
+}
+
+#title{
+  color: #000;
 }
