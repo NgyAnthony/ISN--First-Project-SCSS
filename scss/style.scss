@@ -1,0 +1,99 @@
+@import "layout";
+@import "pfont";
+$color1: #FFFFFF;
+$color2: #ee4323;
+$color3: #5b53a2;
+$color4: #f6c343;
+$color5: #160F66;
+
+@for $i from 1 through 3 {
+  .container-#{$i} { @include container }
+}
+
+@for $i from 1 through 3 {
+  .container-#{$i} div { flex:1; }
+}
+@media(max-width: 966px) {
+  @for $i from 1 through 3 {
+    .container-#{$i} {
+      @include resp2
+    }
+  }
+}
+
+
+@media(max-width: 474px) {
+  @for $i from 1 through 3 {
+    .container-#{$i} {
+      @include resp
+    }
+  }
+}
+
+.box-1{
+  background: $color1;
+}
+
+.box-2{
+  background: $color2;
+}
+
+.box-3{
+  background: $color3;
+}
+
+.box-4{
+  background: $color4;
+}
+
+.box-5{
+  background: $color5;
+  padding-bottom: 10%;
+}
+
+.box-6{
+  background: $color1;
+}
+
+body{
+  margin: 0;
+}
+
+
+.bold_txt {
+@include bold
+}
+
+.reg_txt {
+@include reg
+}
+
+#logo{
+  padding-left: 9%;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  display: flex;
+}
+
+.box_contents {
+  padding-left: 10%;
+  padding-bottom: 20%;
+  transform: translateY(10%);
+
+}
+
+.box_contents>img{
+  max-width:75%;
+  max-height:75%;
+}
+
+#navigation{
+@include r_list;
+}
+
+#navigation li a
+{
+  @include hyperlink;
+  @include bold;
+}
+

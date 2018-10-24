@@ -1,0 +1,71 @@
+@mixin bold{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@mixin reg{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@mixin hyperlink{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #160F66;
+}
+
+@mixin r_list{
+  list-style: none;
+  text-decoration: none;
+}
+
+#menu {
+  color: #f6c343;
+}
+
+#navigation li:hover a{
+  color: #ee4323;
+}
+
+#vertical-google{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: right;
+  color: #ffffff;
+}
+
+#vertical-deep{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: left;
+  color: #f6c343;
+}
+
+#horizontal-deep{
+  color: #FFFFFF;
+}
+
+#vertical-echo{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: right;
+  color: #FFFFFF;
+}
+
+#horizontal-echo{
+  color: #ee4323;
+}
+
+#vertical-siri{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: right;
+  color: #FFFFFF;
+
+}
+
+#horizontal-siri{
+  color: #f6c343;
+}
