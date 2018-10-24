@@ -1,5 +1,6 @@
 @import "layout";
 @import "pfont";
+@import "button";
 $color1: #FFFFFF;
 $color2: #ee4323;
 $color3: #5b53a2;
@@ -94,6 +95,11 @@ body{
 #navigation li a
 {
   @include hyperlink;
+  @include nav;
   @include bold;
 }
 
+.hyperlink_removed{
+  @include hyperlink;
+  @include bold;
+}
