@@ -1,12 +1,20 @@
 @import "layout";
 @import "pfont";
 @import "button";
+@import "slide_nav";
 $color1: #FFFFFF;
 $color2: #ee4323;
 $color3: #5b53a2;
 $color4: #f6c343;
 $color5: #160F66;
 
+/*Retirer les bordures sur les containers*/
+body{
+  margin: 0;
+}
+
+
+/*Création du layout pour les container*/
 @for $i from 1 through 3 {
   .container-#{$i} { @include container }
 }
@@ -14,6 +22,8 @@ $color5: #160F66;
 @for $i from 1 through 3 {
   .container-#{$i} div { flex:1; }
 }
+
+/*Responsive pour tablette et smartphone*/
 @media(max-width: 966px) {
   @for $i from 1 through 3 {
     .container-#{$i} {
@@ -21,7 +31,6 @@ $color5: #160F66;
     }
   }
 }
-
 
 @media(max-width: 474px) {
   @for $i from 1 through 3 {
@@ -31,6 +40,15 @@ $color5: #160F66;
   }
 }
 
+@media(max-width: 368px) {
+  @for $i from 1 through 3 {
+    .container-#{$i} {
+      @include resp3
+    }
+  }
+}
+
+/*Couleur de chaque box*/
 .box-1{
   background: $color1;
 }
@@ -56,11 +74,7 @@ $color5: #160F66;
   background: $color1;
 }
 
-body{
-  margin: 0;
-}
-
-
+/*Style du texte*/
 .bold_txt {
 @include bold
 }
@@ -69,6 +83,7 @@ body{
 @include reg
 }
 
+/*Position du logo*/
 #logo{
   padding-left: 9%;
   padding-top: 7%;
@@ -76,6 +91,7 @@ body{
   display: flex;
 }
 
+/*Position du contenu des box*/
 .box_contents {
   padding-left: 10%;
   padding-bottom: 20%;
@@ -83,11 +99,13 @@ body{
 
 }
 
+/*Taille des images*/
 .box_contents>img{
   max-width:75%;
   max-height:75%;
 }
 
+/*Style du nav sur l'index*/
 #navigation{
 @include r_list;
 }

@@ -22,15 +22,21 @@
   list-style: none;
   text-decoration: none;
 }
-
+/* Couleur du texte dans la 1ère box*/
 #menu {
   color: #f6c343;
 }
 
 #navigation li:hover a{
   color: #ee4323;
+
 }
 
+#title{
+  color: #000;
+}
+
+/* Couleur de chaque texte et positionnement */
 #vertical-google{
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -76,6 +82,16 @@
   color: #f6c343;
 }
 
-#title{
-  color: #000;
+#vertical-microphone{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: left;
+  color: #f6c343;
+}
+
+#vertical-speaker{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: right;
+  color: #5b53a2;
 }
