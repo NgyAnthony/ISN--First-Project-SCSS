@@ -41,6 +41,31 @@ body{
   }
 }
 
+/* 5.1 - _hardware */
+@media(max-width: 966px) {
+  #necessary{
+    flex-direction: column-reverse;
+  }
+}
+
+@media(max-width: 630px) {
+  #necessary>div>div>h3{
+    font-size: 20px;
+  }
+  #appareils-resp {
+    @include appareils-resp
+  }
+}
+
+@media(max-width: 412px) {
+  #necessary>div>div>h3{
+    font-size: 15px;
+  }
+  #appareils-resp {
+    @include appareils-resp
+  }
+}
+
 /* 6.0 - Global - Couleur de chaque box */
 .box-1{
   background: $color1;
@@ -86,6 +111,7 @@ body{
 /* 9.0 - Global - Position du contenu des box */
 .box_contents {
   padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 20%;
   transform: translateY(10%);
 

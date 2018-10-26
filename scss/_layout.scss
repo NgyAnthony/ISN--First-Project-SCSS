@@ -30,3 +30,11 @@
 
 }
 
+@mixin appareils-resp {
+  display: flex;
+  flex-direction: column;
+  .box_contents>img{
+    max-width:100%;
+    max-height:100%;
+  }
+}
