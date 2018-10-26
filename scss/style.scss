@@ -115,51 +115,41 @@ body{
 }
 
 
-/* 12.0 - _Index - Couleur du texte dans la 1ère box */
-#menu {
-  color: $color4;
-}
-
+/* 12.0 - _Index - Couleur du texte hover */
 #navigation li:hover a{
   color: $color2;
 
 }
 
-#title{
-  color: $color6;
-}
-
 /* 13.0 - Global - Couleur de chaque texte et positionnement */
-/* 13.1 - _Index */
-#vertical-google, #vertical-echo, #vertical-siri{
-  @include vertical-right;
+.color-1{
   color: $color1;
 }
 
-#vertical-deep{
-  @include vertical-left;
-  color: $color4;
-}
-
-#horizontal-deep{
-  color: $color1;
-}
-
-#horizontal-echo{
+.color-2{
   color: $color2;
 }
 
-#horizontal-siri, #horizontal-google{
+.color-3{
+  color: $color3;
+}
+
+.color-4{
   color: $color4;
 }
 
-/* 13.2 - _Hardware */
-#vertical-microphone{
-  @include vertical-left;
-  color: #f6c343;
+.color-5{
+  color: $color5;
 }
 
-#vertical-speaker{
-  @include vertical-right;
-  color: #5b53a2;
+.color-6{
+  color: $color6;
+}
+
+.vertical-right{
+  @include vertical-right
+}
+
+.vertical-left{
+  @include vertical-left
 }
