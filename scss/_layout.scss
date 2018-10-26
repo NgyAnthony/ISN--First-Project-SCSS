@@ -5,22 +5,18 @@
 @mixin resp {
   display: flex;
   flex-direction: column;
-  .box_contents>img{
-    max-width:70%;
-    max-height:70%;
-  }
-  .box_contents>h3{
-    font-size: 15px;
-  }
-  .box_contents{
-    padding-bottom: 70%;
-  }
 }
 
 @mixin resp2 {
   display: flex;
   flex-direction: column;
-
+  .box_contents>img{
+    max-width:70%;
+    max-height:70%;
+  }
+  .box_contents{
+    padding-bottom: 70%;
+  }
 }
 
 @mixin resp3 {
@@ -28,16 +24,9 @@
     max-width:50%;
     max-height:50%;
   }
-  .box_contents>h3{
-    font-size: 13px;
-  }
   .box_contents{
     padding-bottom: 100%;
   }
 
-}
-
-#box-bottom{
-  padding-bottom: 10%;
 }
 

@@ -1,81 +1,5 @@
 @charset "UTF-8";
-#box-bottom {
-  padding-bottom: 10%;
-}
-
-/* Couleur du texte dans la 1ère box*/
-#menu {
-  color: #f6c343;
-}
-
-#navigation li:hover a {
-  color: #ee4323;
-}
-
-#title {
-  color: #000;
-}
-
-/* Couleur de chaque texte et positionnement */
-#vertical-google {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #ffffff;
-}
-
-#vertical-deep {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: left;
-  color: #f6c343;
-}
-
-#horizontal-deep {
-  color: #FFFFFF;
-}
-
-#vertical-echo {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #FFFFFF;
-}
-
-#horizontal-echo {
-  color: #ee4323;
-}
-
-#vertical-siri {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #FFFFFF;
-}
-
-#horizontal-siri {
-  color: #f6c343;
-}
-
-#horizontal-google {
-  color: #f6c343;
-}
-
-#vertical-microphone {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: left;
-  color: #f6c343;
-}
-
-#vertical-speaker {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #5b53a2;
-}
-
-/* Effets des boutons */
+/* 1.0 - _Global - Effets des boutons */
 .buttons {
   margin: 10%;
   text-align: center;
@@ -116,7 +40,7 @@
   box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
 
-/* Barre de navigation verticale */
+/* 2.0 - _Index excluded - Barre de navigation verticale */
 .sidenav {
   height: 100%;
   width: 0;
@@ -164,134 +88,50 @@
     font-size: 18px;
   }
 }
-/*Retirer les bordures sur les containers*/
+/* 3.0 - Global - Retirer les bordures sur les containers */
 body {
   margin: 0;
 }
 
-/*Création du layout pour les container*/
-.container-1 {
+/* 4.0 - Global - Création du layout pour les container */
+.container {
   display: flex;
 }
 
-.container-2 {
-  display: flex;
-}
-
-.container-3 {
-  display: flex;
-}
-
-.container-1 div {
+.container div {
   flex: 1;
 }
 
-.container-2 div {
-  flex: 1;
-}
-
-.container-3 div {
-  flex: 1;
-}
-
-/*Responsive pour tablette et smartphone*/
+/* 5.0 - Global - Responsive pour tablette et smartphone */
 @media (max-width: 966px) {
-  .container-1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container-2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container-3 {
+  .container {
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 474px) {
-  .container-1 {
+  .container {
     display: flex;
     flex-direction: column;
   }
-  .container-1 .box_contents > img {
+  .container .box_contents > img {
     max-width: 70%;
     max-height: 70%;
   }
-  .container-1 .box_contents > h3 {
-    font-size: 15px;
-  }
-  .container-1 .box_contents {
-    padding-bottom: 70%;
-  }
-
-  .container-2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .container-2 .box_contents > img {
-    max-width: 70%;
-    max-height: 70%;
-  }
-  .container-2 .box_contents > h3 {
-    font-size: 15px;
-  }
-  .container-2 .box_contents {
-    padding-bottom: 70%;
-  }
-
-  .container-3 {
-    display: flex;
-    flex-direction: column;
-  }
-  .container-3 .box_contents > img {
-    max-width: 70%;
-    max-height: 70%;
-  }
-  .container-3 .box_contents > h3 {
-    font-size: 15px;
-  }
-  .container-3 .box_contents {
+  .container .box_contents {
     padding-bottom: 70%;
   }
 }
 @media (max-width: 368px) {
-  .container-1 .box_contents > img {
+  .container .box_contents > img {
     max-width: 50%;
     max-height: 50%;
   }
-  .container-1 .box_contents > h3 {
-    font-size: 13px;
-  }
-  .container-1 .box_contents {
-    padding-bottom: 100%;
-  }
-
-  .container-2 .box_contents > img {
-    max-width: 50%;
-    max-height: 50%;
-  }
-  .container-2 .box_contents > h3 {
-    font-size: 13px;
-  }
-  .container-2 .box_contents {
-    padding-bottom: 100%;
-  }
-
-  .container-3 .box_contents > img {
-    max-width: 50%;
-    max-height: 50%;
-  }
-  .container-3 .box_contents > h3 {
-    font-size: 13px;
-  }
-  .container-3 .box_contents {
+  .container .box_contents {
     padding-bottom: 100%;
   }
 }
-/*Couleur de chaque box*/
+/* 6.0 - Global - Couleur de chaque box */
 .box-1 {
   background: #FFFFFF;
 }
@@ -310,14 +150,13 @@ body {
 
 .box-5 {
   background: #160F66;
-  padding-bottom: 10%;
 }
 
 .box-6 {
   background: #FFFFFF;
 }
 
-/*Style du texte*/
+/* 7.0 - Global - Style du texte */
 .bold_txt {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -330,7 +169,7 @@ body {
   font-size: 20px;
 }
 
-/*Position du logo*/
+/* 8.0 - _Index - Position du logo */
 #logo {
   padding-left: 9%;
   padding-top: 7%;
@@ -338,20 +177,20 @@ body {
   display: flex;
 }
 
-/*Position du contenu des box*/
+/* 9.0 - Global - Position du contenu des box */
 .box_contents {
   padding-left: 10%;
   padding-bottom: 20%;
   transform: translateY(10%);
 }
 
-/*Taille des images*/
+/* 10.0 - Global - Taille des images */
 .box_contents > img {
   max-width: 75%;
   max-height: 75%;
 }
 
-/*Style du nav sur l'index*/
+/* 11.0 - _Index - Style du nav */
 #navigation {
   list-style: none;
   text-decoration: none;
@@ -370,4 +209,60 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 30px;
+}
+
+/* 12.0 - _Index - Couleur du texte dans la 1ère box */
+#menu {
+  color: #f6c343;
+}
+
+#navigation li:hover a {
+  color: #ee4323;
+}
+
+#title {
+  color: #000;
+}
+
+/* 13.0 - Global - Couleur de chaque texte et positionnement */
+/* 13.1 - _Index */
+#vertical-google, #vertical-echo, #vertical-siri {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: right;
+  color: #FFFFFF;
+}
+
+#vertical-deep {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: left;
+  color: #f6c343;
+}
+
+#horizontal-deep {
+  color: #FFFFFF;
+}
+
+#horizontal-echo {
+  color: #ee4323;
+}
+
+#horizontal-siri, #horizontal-google {
+  color: #f6c343;
+}
+
+/* 13.2 - _Hardware */
+#vertical-microphone {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: left;
+  color: #f6c343;
+}
+
+#vertical-speaker {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  float: right;
+  color: #5b53a2;
 }

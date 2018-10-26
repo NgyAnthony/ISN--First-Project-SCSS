@@ -7,48 +7,41 @@ $color2: #ee4323;
 $color3: #5b53a2;
 $color4: #f6c343;
 $color5: #160F66;
+$color6: #000;
 
-/*Retirer les bordures sur les containers*/
+/* 3.0 - Global - Retirer les bordures sur les containers */
 body{
   margin: 0;
 }
 
-
-/*Création du layout pour les container*/
-@for $i from 1 through 3 {
-  .container-#{$i} { @include container }
+/* 4.0 - Global - Création du layout pour les container */
+.container{
+  @include container
+}
+.container div{
+  flex: 1;
 }
 
-@for $i from 1 through 3 {
-  .container-#{$i} div { flex:1; }
-}
-
-/*Responsive pour tablette et smartphone*/
+/* 5.0 - Global - Responsive pour tablette et smartphone */
 @media(max-width: 966px) {
-  @for $i from 1 through 3 {
-    .container-#{$i} {
-      @include resp2
-    }
+  .container{
+    @include resp
   }
 }
 
 @media(max-width: 474px) {
-  @for $i from 1 through 3 {
-    .container-#{$i} {
-      @include resp
-    }
+  .container{
+    @include resp2
   }
 }
 
 @media(max-width: 368px) {
-  @for $i from 1 through 3 {
-    .container-#{$i} {
-      @include resp3
-    }
+  .container{
+    @include resp3
   }
 }
 
-/*Couleur de chaque box*/
+/* 6.0 - Global - Couleur de chaque box */
 .box-1{
   background: $color1;
 }
@@ -67,14 +60,13 @@ body{
 
 .box-5{
   background: $color5;
-  padding-bottom: 10%;
 }
 
 .box-6{
   background: $color1;
 }
 
-/*Style du texte*/
+/* 7.0 - Global - Style du texte */
 .bold_txt {
 @include bold
 }
@@ -83,7 +75,7 @@ body{
 @include reg
 }
 
-/*Position du logo*/
+/* 8.0 - _Index - Position du logo */
 #logo{
   padding-left: 9%;
   padding-top: 7%;
@@ -91,7 +83,7 @@ body{
   display: flex;
 }
 
-/*Position du contenu des box*/
+/* 9.0 - Global - Position du contenu des box */
 .box_contents {
   padding-left: 10%;
   padding-bottom: 20%;
@@ -99,13 +91,13 @@ body{
 
 }
 
-/*Taille des images*/
+/* 10.0 - Global - Taille des images */
 .box_contents>img{
   max-width:75%;
   max-height:75%;
 }
 
-/*Style du nav sur l'index*/
+/* 11.0 - _Index - Style du nav */
 #navigation{
 @include r_list;
 }
@@ -120,4 +112,54 @@ body{
 .hyperlink_removed{
   @include hyperlink;
   @include bold;
+}
+
+
+/* 12.0 - _Index - Couleur du texte dans la 1ère box */
+#menu {
+  color: $color4;
+}
+
+#navigation li:hover a{
+  color: $color2;
+
+}
+
+#title{
+  color: $color6;
+}
+
+/* 13.0 - Global - Couleur de chaque texte et positionnement */
+/* 13.1 - _Index */
+#vertical-google, #vertical-echo, #vertical-siri{
+  @include vertical-right;
+  color: $color1;
+}
+
+#vertical-deep{
+  @include vertical-left;
+  color: $color4;
+}
+
+#horizontal-deep{
+  color: $color1;
+}
+
+#horizontal-echo{
+  color: $color2;
+}
+
+#horizontal-siri, #horizontal-google{
+  color: $color4;
+}
+
+/* 13.2 - _Hardware */
+#vertical-microphone{
+  @include vertical-left;
+  color: #f6c343;
+}
+
+#vertical-speaker{
+  @include vertical-right;
+  color: #5b53a2;
 }

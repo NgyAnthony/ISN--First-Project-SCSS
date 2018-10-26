@@ -22,76 +22,15 @@
   list-style: none;
   text-decoration: none;
 }
-/* Couleur du texte dans la 1ère box*/
-#menu {
-  color: #f6c343;
-}
 
-#navigation li:hover a{
-  color: #ee4323;
-
-}
-
-#title{
-  color: #000;
-}
-
-/* Couleur de chaque texte et positionnement */
-#vertical-google{
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #ffffff;
-}
-
-#vertical-deep{
+@mixin vertical-left{
   writing-mode: vertical-rl;
   text-orientation: mixed;
   float: left;
-  color: #f6c343;
 }
 
-#horizontal-deep{
-  color: #FFFFFF;
-}
-
-#vertical-echo{
+@mixin vertical-right{
   writing-mode: vertical-rl;
   text-orientation: mixed;
   float: right;
-  color: #FFFFFF;
-}
-
-#horizontal-echo{
-  color: #ee4323;
-}
-
-#vertical-siri{
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #FFFFFF;
-
-}
-
-#horizontal-siri{
-  color: #f6c343;
-}
-
-#horizontal-google{
-  color: #f6c343;
-}
-
-#vertical-microphone{
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: left;
-  color: #f6c343;
-}
-
-#vertical-speaker{
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  float: right;
-  color: #5b53a2;
 }
