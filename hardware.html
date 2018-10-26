@@ -9,7 +9,7 @@
     <title>ISN - Lycée Charlie Chaplin</title>
 </head>
 <body>
-
+<!-- Menu vertical slide gauche !-->
 <div id="mySidenav" class="sidenav">
     <div id="logo">
         <a href="http://www.lyceecharliechaplin.com/" target="_blank">
@@ -25,13 +25,19 @@
 </div>
 
 <div id="main">
+    <!-- Tout ce qui est dans main est poussé sur la droite quand on ouvre le menu. !-->
     <div class="container" id="appareils-resp">
+        <!-- Container permet de déterminer la limite des deux boites sur la ligne avec Flexbox. L'ID ici est utilisé pour rendre la div responsive(voir CSS 5.1) !-->
         <div class="box-4">
+            <!-- Choisissez la boîte que vous voulez(voir couleur dans le CSS) !-->
             <span style="font-size:30px;cursor:pointer;padding-left:10px" onclick="openNav()">&#9776;</span>
+            <!-- Bouton ouverture du menu en haut à gauche-->
             <div class="box_contents">
+                <!-- Box Content re-centre les éléments à l'intérieur pour éviter qu'ils collent aux bordures. (voir CSS 9.0) !-->
                 <h3 class="bold_txt color-5">Hardware.</h3>
+                <!-- bold_txt et color-5 sont 2 classes de style CSS (voir CSS 13.0)!-->
                 <p class="reg_txt color-1">Il existe plusieurs appareils capables de supporter un assisstant numérique.</p>
-                <ul class="reg_txt" id="horizontal-deep">
+                <ul class="reg_txt color-1">
                     <li>Les enceintes connectées</li>
                     <li>Les smartphones</li>
                     <li>Les ordinateurs sous iOS/Windows</li>
@@ -50,6 +56,7 @@
                 <h3 class="bold_txt color-4 vertical-left">Carrés orange. Microphone.</h3>
                 <h3 class="bold_txt color-3 vertical-right">Google Home. Haut-parleur.</h3>
                 <img src="img/micro-speaker.png" alt="Micro-speaker" style="max-width: 40%;max-height:40%;padding-left: 10%; padding-bottom: 10%"/>
+                <!-- Ici j'indique directement le style CSS dans la balise car je veux pour éviter de créer un ID. !-->
             </div>
         </div>
         <div class="box-2">
