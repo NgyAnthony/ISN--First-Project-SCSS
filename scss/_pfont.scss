@@ -12,6 +12,7 @@
 
 @mixin hyperlink{
   text-decoration: none;
+  font-weight: bold;
 }
 
 @mixin nav{
@@ -33,4 +34,8 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   float: right;
+}
+
+@mixin hyperlink_source{
+  text-decoration: none;
 }

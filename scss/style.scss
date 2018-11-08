@@ -137,7 +137,11 @@ body{
 
 .hyperlink_removed{
   @include hyperlink;
-  @include bold;
+}
+
+.hyperlink_source{
+  @include hyperlink_source;
+  @include reg
 }
 
 
