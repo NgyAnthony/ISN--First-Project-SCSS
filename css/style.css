@@ -67,6 +67,10 @@
   color: #ee4323;
 }
 
+.sidenav .current {
+  color: #ee4323;
+}
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
