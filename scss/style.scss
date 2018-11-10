@@ -8,6 +8,7 @@ $color3: #5b53a2;
 $color4: #f6c343;
 $color5: #160F66;
 $color6: #000;
+$color7: #6121F5;
 
 /* 3.0 - Global - Retirer les bordures sur les containers */
 body{
@@ -96,6 +97,10 @@ body{
 @include bold
 }
 
+.medium_txt{
+  @include medium
+}
+
 .reg_txt {
 @include reg
 }
@@ -176,10 +181,18 @@ body{
   color: $color6;
 }
 
+.color-7{
+  color: $color7;
+}
+
 .vertical-right{
   @include vertical-right
 }
 
 .vertical-left{
   @include vertical-left
+}
+
+.vertical-line {
+  border-left: 2px solid black;
 }
