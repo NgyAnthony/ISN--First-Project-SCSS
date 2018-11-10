@@ -94,7 +94,7 @@ body{
 
 /* 7.0 - Global - Style du texte */
 .bold_txt {
-@include bold
+  @include bold
 }
 
 .medium_txt{
@@ -102,7 +102,7 @@ body{
 }
 
 .reg_txt {
-@include reg
+  @include reg
 }
 
 /* 8.0 - _Index - Position du logo */
@@ -126,6 +126,11 @@ body{
 .box_contents>img{
   max-width:75%;
   max-height:75%;
+}
+
+.centered_image{
+ display: block;
+  margin: 0 auto;
 }
 
 /* 11.0 - _Index - Style du nav */
@@ -195,4 +200,8 @@ body{
 
 .vertical-line {
   border-left: 2px solid black;
+}
+
+.centered_text{
+  text-align: center;
 }

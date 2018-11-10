@@ -231,6 +231,11 @@ body {
   max-height: 75%;
 }
 
+.centered_image {
+  display: block;
+  margin: 0 auto;
+}
+
 /* 11.0 - _Index - Style du nav */
 #navigation {
   list-style: none;
@@ -306,6 +311,10 @@ body {
 
 .vertical-line {
   border-left: 2px solid black;
+}
+
+.centered_text {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
